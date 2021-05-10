@@ -1,0 +1,19 @@
+{% extends 'admin/base.html' %}
+
+{% load static %}
+
+{% block title %}
+  AR | Admin Panel
+{% endblock %}
+
+{% block branding %}
+
+  <h1 id='head'>
+    <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" class="brand_img" height="50px" width=140px></a>
+  </h1>
+
+{% endblock %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block content %}
+<section class="text-gray-600 body-font">
+<div class="container mx-auto flex px-5 py-11 md:flex-row flex-col items-center">
+  <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">AR ENTERPRISES
+    </h1>
+    <p class="mb-8 leading-relaxed">AR Enterprises was founded in Anantapur, 2021 by <u>SHAIK ABDUL RAWOOF</u> and <u>MOHAMMED SHAIK ABUBAKAR</u>. It is a website that acts as a platform for cement providing services starting from design until its completion. AR Enterprises showcases a wide range of cement brands available in the market.</p>
+  </div>
+  <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="{% static 'img/Building.jpg' %}">
+      <img class="mySlides" src="{% static 'img/Building1.jpg' %}">
+      <img class="mySlides" src="{% static 'img/Building2.jpg' %}">
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}
