@@ -1,27 +1,24 @@
 {% load static %}
 <style>
-  .txt {
-    color: white;
-  }
   button {
-    color: #900C3F;
+    color: #F033FF;
   }
 </style>
 
 <div class="txt">
-<header class="body-font" style="background-color: #900C3F;">
+<header class="body-font" style="background-color: #F9FF33;">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a href="{% url 'home' %}" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img src="{% static 'img/logo.png' %}" width="180" height="80" alt="">
+      <img src="{% static 'img/Logo.png' %}" width="150" height="50" alt="">
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a href="{% url 'home' %}" class="mr-5 hover:text-blue-500">Home</a>
-      <a href="{% url 'about' %}" class="mr-5 hover:text-blue-500">About</a>
-      <a href="{% url 'order' %}" class="mr-5 hover:text-blue-500">Order</a>
-      <a href="{% url 'contact' %}" class="mr-5 hover:text-blue-500">Contact</a>
+      <a href="{% url 'home' %}" style="color: #3C33FF; font-size: 130%;" class="mr-5 hover:text-blue-500">Home</a>
+      <a href="{% url 'about' %}" style="color: #3C33FF; font-size: 130%;" class="mr-5 hover:text-blue-500">About</a>
+      <a href="{% url 'order' %}" style="color: #3C33FF; font-size: 130%;" class="mr-5 hover:text-blue-500">Order</a>
+      <a href="{% url 'contact' %}" style="color: #3C33FF; font-size: 130%;" class="mr-5 hover:text-blue-500">Contact</a>
     </nav>
     <div class="sm:motion-reduce:hover:animate-none">
-    <button class="transform hover:scale-110 motion-reduce:transform-none inline-flex items-center border-0 py-1 px-3 focus:outline-none bg-white rounded text-base mt-4 md:mt-0">
+    <button style="font-size: 130%;" class="transform hover:scale-110 motion-reduce:transform-none inline-flex items-center border-0 py-1 px-3 focus:outline-none bg-white rounded text-base mt-4 md:mt-0">
       <a href="{% url 'admin:index' %}">Admin</a></button>
     </div>
   </div>
